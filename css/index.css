@@ -1,0 +1,366 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #443d4b;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* h1, h2, h3 {
+    margin: 0;
+} */
+
+.menu{
+    width: 72%;
+    margin: auto;
+    display: flex;
+    padding: -3%;
+    background-color: rgb(233, 227, 227);
+    font-family: 'Montserrat', sans-serif;
+}
+.nav{
+    display: flex;
+    width: 20%;
+    margin-top: 2%;
+    margin-left: 70px;
+    padding-left: 0;
+}
+.nav a{
+    text-decoration: none; 
+    color: rgb(10, 10, 10);
+    margin-left: auto;
+
+}
+.nav li{
+    list-style-type: none;
+}
+.nav a:hover{
+    color: #ff4e2e;
+    text-decoration: underline;
+}
+
+
+
+.rightContent{
+    display: flex;
+    margin-left: 40%;
+}
+.rightContent h1{
+    margin-left: -5%;
+    margin-top: 1.2%;
+    font-size: 20px;
+    position: absolute;
+}
+
+
+.rightContent button{
+    margin-top: 5%;
+    margin-left: 120px;
+    width: 145px;
+    height: 30px;
+    border: 1px solid #ff4e2e;
+    color: #ff4e2e;
+    background-color: inherit;
+}
+.rightContent button:hover{
+    color: white;
+    background-color: #ff4e2e;
+    cursor: pointer;
+}
+/* ABOUTME */
+.aboutMe{
+    width: 72%;
+    height: 481px;
+    margin: auto;
+    display: flex;
+    background-color: rgb(180, 180, 180);
+    font-family: 'Montserrat', sans-serif;
+}
+.aboutMe .name{
+    position: absolute;
+    height: 45%;
+    margin-top: 6%;
+    margin-left: 6%;
+}
+.aboutMe .name h2{
+    font-size: 65px;
+}
+.aboutMe .name h3{
+    margin-top: -10%;
+    font-size: 23px;
+    color:rgb(109, 108, 108);
+}
+.buttonMe{
+    width: 191px;
+    height: 43px;
+    border: 1px solid #ff4e2e;
+    color: white;
+    background-color: #ff4e2e;
+}
+.buttonMe:hover{
+    background-color: #fa2b07;
+    cursor: pointer;
+}
+.personalPhoto{
+    position: absolute;
+    width: 30%;
+    height: 59%;
+    margin-left: 43%;
+    margin-top: 1%;
+}
+/* ЧТО Я ДЕЛАЮ */
+.delau{
+    width: 72%;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    background-color: rgb(170, 170, 170);
+    font-family: 'Montserrat', sans-serif;
+}
+.delau h3{
+    position: absolute;
+    margin-left: 26%;
+    font-size: 3em;
+}
+.cards{
+    width: 76%;
+    margin-left: 12%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 60%;
+    text-align: center;
+}
+.cardImg{
+    width: 150px;
+    height: 75px;
+}
+.cardText{
+    width: 100%;
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+
+}
+/* КНОПКА */
+.btnStiom{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin-top: 24%;
+    margin-left: 29%;
+    border: 1px solid #ff4e2e;
+    color: white;
+    background-color: #ff4e2e;
+}
+.btnStiom:hover{
+    background-color: #fa2b07;
+    cursor: pointer;
+}
+
+/* МОИ РАБОТЫ */
+.myraboty{
+    width: 72%;
+    height: 480px;
+    margin: auto;
+    background-color: rgb(153, 152, 152);
+    font-family: 'Montserrat', sans-serif;
+}
+/* .myraboty h3{
+    margin: 0 auto;
+    margin-top: 3%;
+    font-size: 3em;
+} */
+/* SLIDER */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+/* конкретный слайдер */
+.slider{
+    position: relative;
+    padding: 0 50px;
+}
+.slider .slick-arrow{
+    position: absolute;
+    top: 40%;
+    margin: -20px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 54px;
+}
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url('/img/влево.png') 0 0 / 100% no-repeat;
+    border: none;
+}
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url('/img/вправо.png') 0 0 / 100% no-repeat;
+    border: none;
+}
+/* точки */
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .slick-dots li{
+    list-style-type: none;
+    margin: 0 10px;
+}
+.slider .slick-dots button{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+.slider .slick-dots li.slick-active button{
+    background-color: rgb(100, 99, 99);
+    border: 1px solid white;
+}
+.slider__item{
+    text-align: center;
+}
+
+
+
+/* БАННЕР */
+.adapban{
+    width: 72%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    background-color: rgb(136, 134, 134);
+    font-family: 'Montserrat', sans-serif;
+}
+.sent{
+    position: absolute;
+    font-size: 35px;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+.sentmin{
+    position: absolute;
+    font-size: 13px;
+    margin-top: 10%;
+    margin-left: 15%;
+    text-decoration: underline;
+}
+/* FOOTER */
+#footer-site{
+    width: 72%;
+    height: 180px;
+    margin: auto;
+    display: flex;
+    background-color: rgb(153, 152, 152);
+    font-family: 'Montserrat', sans-serif;
+}
+.secmenu{
+    width: 100px;
+    height: 120px;
+    margin-top: 2%;
+    margin-left: 9%;
+    line-height: 40px;
+}
+.navi a{
+    text-decoration: none; 
+    color: rgb(10, 10, 10);
+    margin-left: auto;
+
+}
+.navi li{
+    font-size: .9em;
+    list-style-type: none;
+}
+.navi a:hover{
+    color: #ff4e2e;
+    text-decoration: underline;
+}
+.contacts{
+    margin-left: 20%;
+}
+.email h3{
+    text-align: center;
+}
+.email p{
+    text-decoration: underline;
+}
+.contacts h3{
+    text-align: center;
+}
+.contact p{
+    text-decoration: underline;  
+}
+
+.social{
+    margin-left: 10%;
+}
+.social img{
+    margin-left: 40%;
+}
+
+.firstLine{
+    background-color: lawngreen;
+}
+.secondLine{
+    background-color: lawngreen;
+}
+/* prava */
+.rights{
+    position: absolute;
+    width: 72%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    margin-top: 12%;
+    background-color: rgb(46, 49, 59);
+}
+.rights p{
+    font-size: 12px;
+    margin: auto;
+    font-family: 'Roboto Condensed', sans-serif;
+}
